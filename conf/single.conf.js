@@ -4,10 +4,10 @@ exports.config = {
   'browserstackKey': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
 
   'capabilities': {
-    'build': 'protractor-browserstack',
     'name': 'single_test',
     'browserName': 'chrome',
     'resolution': '1024x768',
-    'browserstack.debug': 'true'
+    'browserstack.debug': 'true',
+    'build: process.env.BROWSERSTACK_BUILD_NAME
   }
 };
