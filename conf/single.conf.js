@@ -8,6 +8,6 @@ exports.config = {
     'browserName': 'chrome',
     'resolution': '1024x768',
     'browserstack.debug': 'true',
-    'build: process.env.BROWSERSTACK_BUILD_NAME
+    'build': process.env.BROWSERSTACK_BUILD_NAME
   }
 };
