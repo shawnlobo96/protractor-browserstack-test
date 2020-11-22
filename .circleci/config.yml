@@ -4,9 +4,9 @@ orbs:
 workflows:
   node-tests:
     jobs:
-      - node/test
+      - test
 
-node/test:
+test:
  - steps:
    - run: printenv
    - run: npm i
